@@ -26,8 +26,8 @@ for r in cur:
 # Authenticate with the Twitter API
 api = twitter.Api(consumer_key=auth.twitter_consumer, 
 consumer_secret=auth.twitter.secret, 
-access_token_key=auth.twitter.token, 
-access_token_secret=auth.twitter.token_secret)
+access_token_key=auth.twitter_token, 
+access_token_secret=auth.twitter_token_secret)
 
 # Loop through the current e-mails and parse out data
 for num in data[0].split():
