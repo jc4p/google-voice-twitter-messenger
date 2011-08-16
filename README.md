@@ -8,7 +8,7 @@ How to
 
 Since Google Voice does not have an official API yet, and the one you can find by packet sniffing is too complicated for this task, this program uses e-mail forwarding built into Google Voice.
 
-To use: Add an e-mail address to your Google Voice account and fill out auth.py.
+To use: Add an e-mail address to your Google Voice account and fill out auth.py and set up a cron script to run email_checker.py.
 
 To retrieve the token and token_secret attributes for auth.py, please follow [this guide on Twitter](https://dev.twitter.com/docs/auth/oauth/single-user-with-examples) for retrieving a single user access token using OAuth.
 
