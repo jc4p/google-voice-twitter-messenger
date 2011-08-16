@@ -10,6 +10,19 @@ Since Google Voice does not have an official API yet, and the one you can find b
 
 To use: Add an e-mail address to your Google Voice account and fill out auth.py and set up a cron script to run email_checker.py.
 
+The database sections of the code are not absolutely necessary and can be left out, it was put in to block duplicate messages and record information about who sends messages to the system.
+The SQL schema for the table is:
+
+    CREATE TABLE  `status` (
+      `status_id` BIGINT NOT NULL AUTO_INCREMENT,
+      `message_id` varchar(100) NOT NULL,
+      `timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+      `phone_number` varchar(20) NOT NULL,
+      `content` text NOT NULL,
+      PRIMARY KEY (`status_id`)
+    );
+
+
 To retrieve the token and token_secret attributes for auth.py, please follow [this guide on Twitter](https://dev.twitter.com/docs/auth/oauth/single-user-with-examples) for retrieving a single user access token using OAuth.
 
 ####NOTE:
