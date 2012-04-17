@@ -1,7 +1,16 @@
 Google Voice Powered Twitter Messenger
 =============
 
-This Python application will check a specific e-mail address for e-mails forwarded from Google Voice and automatically posts them to Twitter using the Twitter API.
+A Python application to check a specific e-mail address for e-mails forwarded from Google Voice and automatically posts them to Twitter using the Twitter API.
+
+Requirements
+------
+[PyMySQL](https://github.com/petehunt/PyMySQL/)
+
+[python-twitter](http://code.google.com/p/python-twitter/)
+
+[python-oauth2](https://github.com/simplegeo/python-oauth2)
+
 
 How to
 ------
